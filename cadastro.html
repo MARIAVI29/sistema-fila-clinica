@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Pacientes</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+ 
+    <div class="container">
+
+        <form id="registerForm">
+
+            <h1>Registro de Paciente</h1>
+            
+            <label for="nomeCompleto">Nome Completo:</label>
+            <input type="text" id="nomeCompleto" name="nomeCompleto" required>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required>
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required>
+
+            <label for="plano">Tipo de Plano:</label>
+
+            <select id="plano" name="plano" required>
+
+                <option value="Particular">Particular</option>
+                <option value="Plano Flex">Plano Flex</option>
+                <option value="Plano Max">Plano Max</option>
+                <option value="Plano Diamante">Plano Diamante</option>
+                <option value="Plano Gold">Plano Gold</option>
+                <option value="Plano Empresarial">Plano Empresarial</option>
+
+            </select>
+
+            <label for="prioridade">Prioridade de Triagem:</label>
+
+            <select id="prioridade" name="prioridade" required>
+
+                <option value="Verde">Verde</option>
+                <option value="Amarelo">Amarelo</option>
+                <option value="Vermelho">Vermelho</option>
+
+            </select>
+
+            <button type="submit">Registrar</button>
+
+        </form>
+
+        <div id="fila"></div>
+        <button id="botaoAtender">Atender Próximo Paciente</button>
+        <div id="pacienteAtual"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
+
